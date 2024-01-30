@@ -1,0 +1,9 @@
+<button (click)="toggle()">Toggle</button>
+<ng-template [ngIf]="active">
+  <div>
+    <ng-template ngFor let-month [ngForOf]="allMonth">
+      <h1>{{ month }}</h1>
+    </ng-template>
+  </div>
+</ng-template>
+
